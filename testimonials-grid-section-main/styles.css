@@ -1,0 +1,110 @@
+@import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+
+
+body {
+    background-color:white;
+    font-family:'Barlow semi Contensed', sans-serif;
+    line-height:1.7;
+    font-size:13px;
+}
+
+.testimonials {
+    max-width:1440px;
+    margin:10px auto;
+    padding:20px;
+    color:white;
+    gap:20px;
+
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-areas:
+    'first first second third'
+    'fourth fifth fifth third'
+    ;
+
+    cursor:pointer;
+}
+
+
+.firstPerson,
+ .secondPerson,  
+ .thirdPerson,
+ .fourthPerson,
+ .fifthPerson {
+    display:flex;
+    flex-direction:column;
+    box-shadow:0px 3px 10px 1px rgb(108, 105, 105);
+    padding:10px;
+    border-radius:10px;
+    margin:0;
+}
+
+header {
+    display:flex;
+    flex-direction:row;
+}
+.personInfo {
+    display:flex;
+    flex-direction:column;
+    margin-left:20px;
+    margin-top:10px;
+}
+
+img {
+    border-radius:50%;
+    border:.5px solid black;
+}
+
+p {
+    margin-top:-8px;
+    filter:contrast(50%);
+}
+
+.name {
+    font-size:16px;
+    font-weight:800px;
+}
+
+.firstPerson {
+ background-color: hsl(263, 55%, 52%);
+ grid-area:first;
+}
+
+.secondPerson {
+    background-color:hsl(217, 19%, 35%);
+    grid-area:second;
+}
+
+.thirdPerson {
+    background-color:hsl(0, 0%, 100%);
+    color:rgb(54, 51, 51);
+    grid-area:third;
+}
+
+.fourthPerson
+ {
+    background-color:hsl(0, 0%, 100%);
+    color:rgb(54, 51, 51);
+    grid-area:fourth;
+}
+
+.fifthPerson {
+ background-color:hsl(219, 29%, 14%);
+ grid-area:fifth;
+
+}
+
+
+@media  (max-width:768px) {
+.testimonials {
+display:flex;
+flex-direction:column;
+}
+}
+
+
+@media (max-width:1008px) {
+    img {
+        
+    }
+}
